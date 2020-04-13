@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <!-- The HEAD is where the "thinking" information of a page lives -->
+    <!-- Its where we inject exteneral sources needed for our page to work properly -->
+    <!-- We can link CSS, Javascript, fonts and so much more -->
+    <link rel= "stylesheet" type="text/css" href="../css/styles.css">
+    <!-- The title is the text displayed on our browser tab -->
+    <title> Puppy Love </title>
+  </head>
+
+  <body>
+    <div id="navBar">
+      <nav>
+        <ul>
+          <li><img src="../img/dog-face.png" alt="Logo" width="3%"></a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="DogQuiz.html">Quiz</a></li>
+          <li><a href="AboutUs.html">About us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+
+    <div class="myContainer">
+
+      <div id = "Quiz">
+        <h1>What's the best dog for you?</h1>
+        <h3>Take the quiz to find out...</h3>
+      ​
+      <form id="form1">
+      <br>
+        <h2>What type of house do you live in?</h2>
+        <label for="hou_flat"><input type="radio" name="house" value="flat" id="hou_flat" />Flat</label>
+        <label for="hou_flatg"><input type="radio" name="house" value="flatg" id="hou_flatg" />Flat with garden</label>
+        <label for="hou_cithou"><input type="radio" name="house" value="cithou" id="hou_cithou" />City House</label>
+        <label for="hou_couhou"><input type="radio" name="house" value="couhou" id="hou_couhou"/>Countryside House</label>
+      <br>
+        <h2>Do you have another animal?</h2>
+        <label for="ani_dog"><input type="radio" name="animal" value="dog" id="ani_dog"/>Dog</label>
+        <label for="ani_cat"><input type="radio" name="animal" value="cat" id="ani_cat"/>Cat</label>
+        <label for="ani_none"><input type="radio" name="animal" value="none" id="ani_none" />No animals</label>
+        <label for="ani_both"><input type="radio" name="animal" value="both" id="ani_both" />Both a cat and a dog</label>
+      <br>
+        <h2>Do you have children?</h2>
+        <label for="chi_none"><input type="radio" name="child" value="none" id="chi_none" />No children</label>
+        <label for="chi_baby"><input type="radio" name="child" value="baby" id="chi_baby" />Infant children</label>
+        <label for="chi_young"><input type="radio" name="child" value="young" id="chi_young" />Young children</label>
+        
+      <br> 
+        <h2>What length walks can you do?</h2>
+        <label for="wal_short"><input type="radio" name="walk" value="short" id="wal_none" />Short</label>
+        <label for="wal_medium"><input type="radio" name="walk" value="medium" id="wal_little" />Medium</label>
+        <label for="wal_long"><input type="radio" name="walk" value="long" id="wal_med" />Long</label>
+        <br>
+        <br>
+        <button type="submit" value="Submit">Submit</button>
+        
+        </form>
+      </div>
+
+      <div id="youCan">
+        <h1 id = "answer">Your matches will appear here!</h1>
+      </div> 
+  
+
+        <div class="myGallery" id="Gallery">
+        </div>
+
+        <div class="Selected" >
+            <h1 id="Name"></h1>
+            <div>
+              <div class="Img">
+                <figure>
+                  <img id="ProfilePic">
+                  <div id = "ExtraPics"></div>
+                </figure>
+              </div>
+              <figcaption id="Bio"></figcaption>
+            </div>  
+    
+      </div>
+  
+      
+
+    <h1>Get in touch</h1>
+      <div class="myForm">
+        <form action="process.php" method="POST">
+          
+          <div class="formGroup">
+            <label>First Name</label>
+            <input type="text" name="firstName">
+            </div>
+
+          <div class="formGroup">
+            <label>Last Name</label>
+            <input type="text" name="lastName">
+            </div>
+
+          <div class="formGroup">
+            <label>Email</label>
+            <input type="email" name="email">
+            </div>
+
+          <div class="formGroup">
+            <label>Message</label>
+            <textarea name="message"></textarea>
+            </div>
+            
+          <input type="submit" name="submit" value="Submit">
+        
+        </form>  
+      </div>
+
+    </div>
+
+    <div id="myFooter">
+        <footer>
+        <p>Created by Katerina, Daniella and Suzie for Code First Girls</p>
+        </footer>
+    </div>
+
+
+  </div>
+
+  <script src="../js/dogs.js"></script>
+  <script src="../js/quiz.js"></script>
+ 
+  </body>
+
+</html>

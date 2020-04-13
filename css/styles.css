@@ -1,0 +1,151 @@
+body {
+    background-color: rgba(221, 136, 136, 0.452);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+#navBar{
+    position: fixed;
+    font-size: 14px;
+    top: 0px;
+    background-color: brown;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    text-align: left;
+}s
+
+#navBar ul{
+    list-style: none;
+}
+
+#navBar li{
+    display: inline;
+}
+
+#navBar a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding-right: 20px;
+}
+
+#navBar a:hover{
+    color: chocolate;
+}
+.myContainer{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.myButton{
+    font-size: 19px;
+    color: white;
+    background: brown;
+    text-align: center;
+    padding: 20px;
+    margin: 20 px;
+    border-radius: 5px;
+    ;
+}
+
+.myButton:hover{
+    background: chocolate;
+    color: black;
+}
+
+#youCan{
+    margin-top: 100px;
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.myForm{
+    padding: 20px;
+    margin: 20px; 
+}
+
+.myForm .formGroup{
+    padding: 10px;
+}
+
+.myForm label{
+    display: block;
+}
+
+.myForm input[type="text"], .myForm input[type="email"], .myForm textarea {
+    padding: 8px;
+    width: 100%;
+}
+
+.myGallery {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    }
+
+.myGallery div{
+    border: 2px solid brown;
+    border-radius: 5px;
+    padding: 5px;
+    flex-basis: 30%;
+    box-sizing: border-box;
+    background-color: brown;
+    color: white;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.myGallery .Img{
+    width: 1000px;
+    margin: 10px;
+
+}
+
+.myGallery .Img:hover{
+    background-color: chocolate;
+}
+
+#myFooter{
+    background-color: brown;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px; 
+}
+
+.myGallery .Img img {
+    object-fit: cover;
+    width:  150px;
+    height: 150px;
+}
+
+.Selected {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid brown;
+    border-radius: 5px;
+    padding: 5px;
+    flex-basis: 30%;
+    box-sizing: border-box;
+    background-color: brown;
+    color: white;
+    font-size: 16px;
+    }
+
+#ProfilePic{
+    flex:auto;
+    max-width: 100%;
+    margin: 10px;
+
+}
+
+#Name{
+    margin-top: 100px;
+    text-align: center;
+}

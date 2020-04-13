@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <!-- The HEAD is where the "thinking" information of a page lives -->
+    <!-- Its where we inject exteneral sources needed for our page to work properly -->
+    <!-- We can link CSS, Javascript, fonts and so much more -->
+    <link rel= "stylesheet" type="text/css" href="./css/styles.css">
+    <!-- The title is the text displayed on our browser tab -->
+    <title> Puppy Love </title>
+  </head>
+
+  <body>
+    <div id="navBar">
+      <nav>
+        <ul>
+          <li><img src="img/dog-face.png" alt="Logo" width="3%"></a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="./pages/DogQuiz.html">Quiz</a></li>
+          <li><a href="./pages/AboutUs.html">About us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="myContainer">
+      <div id="youCan">
+      </div>
+
+      <h1>Who will be your perfect friend?</h1>
+        <div class="myButton" onclick= "document.location= './pages/DogQuiz.html'">
+        Take a quiz!
+        </div>
+
+      <h1>Puppies Gallery</h1>
+  
+
+        <div class="myGallery" id="Gallery">
+            <!-- Dog gallery goes in here. Added by JS -->
+        </div>
+
+        <div class="Selected" >
+            <h1 id="Name">Select a dog to see their bio</h1>
+            <div>
+              <div class="Img" id="Images">
+                <figure>
+                  <img id="ProfilePic" src="./img/dog-face.png" alt="Dog">
+                  <div id = "ExtraPics"></div>
+                </figure>
+              </div>
+              <figcaption id="Bio"></figcaption>
+            </div>  
+    
+      </div>
+  
+      
+
+    <h1>Get in touch</h1>
+      <div class="myForm">
+        <form action="process.php" method="POST">
+          
+          <div class="formGroup">
+            <label>First Name</label>
+            <input type="text" name="firstName">
+            </div>
+
+          <div class="formGroup">
+            <label>Last Name</label>
+            <input type="text" name="lastName">
+            </div>
+
+          <div class="formGroup">
+            <label>Email</label>
+            <input type="email" name="email">
+            </div>
+
+          <div class="formGroup">
+            <label>Message</label>
+            <textarea name="message"></textarea>
+            </div>
+            
+          <input type="submit" name="submit" value="Submit">
+        
+        </form>  
+      </div>
+
+    </div>
+
+    <div id="myFooter">
+        <footer>
+        <p>Created by Katerina, Daniella and Suzie for Code First Girls</p>
+        </footer>
+    </div>
+
+
+  </div>
+  <script src="./js/dogs.js"></script>
+  <script src="./js/index.js"></script>
+
+  </body>
+
+</html>
